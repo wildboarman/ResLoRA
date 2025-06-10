@@ -38,7 +38,8 @@ we have already provided the sets for MAE pre-trained ViT-B/16
 ```
 bash vtab_mae_reslora.sh
 ```
-
+## Acknowledgements:
+Our code is modified from [SPT](https://github.com/ziplab/SPT). We thank the authors for their open-sourced code and excellent work!
 
 
 
