@@ -24,7 +24,7 @@ drop_block: null
 drop_path: 0.1
 epochs: 100
 eval: false
-exp_name: 20250610_163825-vtab_mae_param_req_0.1_reslora
+exp_name: 20250611_142637-vtab_mae_param_req_0.1_reslora
 freeze_kwd: patch_embed
 freeze_stage: true
 get_sensitivity: false
@@ -73,7 +73,7 @@ remode: pixel
 repeated_aug: false
 reprob: 0.25
 resplit: false
-resume: checkpoints/mae_pretrain_vit_base.pth
+resume: /home/sxz/papercode/SPT-main/checkpoints/mae_pretrain_vit_base.pth
 rpe_type: bias
 save_best: false
 scaler: naive

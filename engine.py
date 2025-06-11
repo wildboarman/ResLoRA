@@ -58,7 +58,7 @@ def train_one_epoch(model: torch.nn.Module, criterion: torch.nn.Module,
                 loss = criterion(outputs, targets) + 0.05*fdloss
         else:
             fdloss, outputs = model(samples)
-            loss = criterion(outputs, targets) 
+            loss = criterion(outputs, targets) + 0.05*fdloss
 
         loss_value = loss.item()
 
@@ -159,9 +159,9 @@ def get_sensitivity(model: torch.nn.Module, criterion: torch.nn.Module,
 
         if amp:
             with torch.cuda.amp.autocast():
-                outputs = model(samples)
+                fdloss, outputs = model(samples)
                 feature = model.forward_features(samples)
-                loss = criterion(outputs, targets)
+                loss = criterion(outputs, targets) + 0.05*fdloss
 
         else:
             fdloss,outputs = model(samples)            
