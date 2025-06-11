@@ -1,10 +1,9 @@
 # Feature Responsive LoRA: Towards Parameter-Efficient Transfer Learning for Self-Supervised Visual Models
 
 ## Install dependency:
-
+We have tested our code on Torch 1.13.1.
 ```
 pip install -r requirements.txt
-
 ```
 ## Data preparation:
 
